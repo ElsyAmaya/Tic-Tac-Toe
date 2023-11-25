@@ -48,6 +48,12 @@ footer {
 	font-family: 'Fredoka', sans-serif;
   }
 
+  a {
+	text-decoration: none; /* Quítale la subrayado del enlace */
+	color: inherit; /* Hereda el color del texto del elemento padre */
+	cursor: pointer; /* Muestra un cursor de puntero al pasar el mouse */
+  }
+
 /* Barra de Progreso ======================*/
 .tictactoe-logo {
 	max-width: 500px;
@@ -81,4 +87,118 @@ footer {
 	background-color: #0081C6;
 	width: calc(var(--width, 0) * 1%);
 	border-radius: 50px;
+}
+
+#logo-container {
+    margin-top: 80px; /* Ajusta el valor según sea necesario */
+
+}
+
+#button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px; /* Ajusta el valor según sea necesario */
+	margin-top: 20px;
+}
+
+.red-button,
+.blue-button {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 20px;
+	width: 160px;
+	height: 50px;
+}
+
+
+.blue-button {
+	background-color: #0081C6;
+	color: white;
+	border: none;
+	margin-right: 20px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.25s ease; /* Agregado para aplicar la transición a todos los cambios */
+  }
+  
+  .blue-button::after {
+	content: "X";
+	position: absolute;
+	left: -20%;
+	transition: 0.25s ease;
+	font-family: 'Fredoka', sans-serif;
+  }
+  
+  .blue-button span {
+	padding-left: 0; /* O el valor que desees para el estado normal */
+	transition: 0.25s ease;
+  }
+  
+  .blue-button:hover {
+	width: 170px; /* Aumenta el ancho en el estado de hover */
+  }
+  
+  .blue-button:hover span {
+	padding-right: 30px; /* Ajusta el valor según sea necesario para el desplazamiento */
+  }
+  
+  .blue-button:hover::after {
+	left: 20px;
+  }
+
+
+  .red-button {
+    background-color: #DC4C22;
+    color: white;
+    border: none;
+	margin-right: 20px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.25s ease; /* Agregado para aplicar la transición a todos los cambios */
+
+  }
+  
+  .red-button::after {
+	content: "O";
+	position: absolute;
+	left: -20%;
+	transition: 0.25s ease;
+	font-family: 'Fredoka', sans-serif;
+  }
+  
+  .red-button span {
+	padding-left: 0; /* O el valor que desees para el estado normal */
+	transition: 0.25s ease;
+  }
+  
+  .red-button:hover {
+	width: 170px; /* Aumenta el ancho en el estado de hover */
+  }
+  
+  .red-button:hover span {
+	padding-right: 30px; /* Ajusta el valor según sea necesario para el desplazamiento */
+  }
+  
+  .red-button:hover::after {
+	left: 20px;
+  }
+
+  #container-info {
+	justify-content: left;
+}
+
+.green-button {
+    margin-top: 10px; /* Ajusta la distancia desde el elemento superior según sea necesario */
+    width: 50px;
+    height: 50px;
+    background-color: #9DDF2C;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+	margin-top: 50px; /* Ajusta la distancia desde el elemento superior según sea necesario */
+	margin-left: 40px;
 }
