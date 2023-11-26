@@ -355,3 +355,47 @@ footer {
     transition: all 0.25s ease;
 }
 
+
+.campos-form .campo .password-container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.campos-form .campo .input-container {
+    flex: 1;
+    width: 90%;
+}
+
+.campos-form .campo input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    text-align: center;
+	outline: none; /* Elimina el borde de enfoque */
+
+}
+
+
+.campos-form .campo .icon-container {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.campos-form .campo .show-password {
+    width: 100%;
+    cursor: pointer;
+}
+
+.campos-form .campo .show-password2 {
+    width: 100%;
+    cursor: pointer;
+}
+

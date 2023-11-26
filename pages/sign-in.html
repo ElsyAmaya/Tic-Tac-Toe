@@ -11,7 +11,7 @@
     <meta name="keywords" content="html,Tic Tac Toe">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
+<script src="../js/password.js"></script>
 <body>
     <div>
         <div id="form-container">
@@ -28,8 +28,17 @@
                     <div class="campo">
                         <img src="../Img/o.svg" alt="Icono O">
                         <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password">
+                        <div class="password-container">
+                            <div class="input-container">
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="icon-container">
+                                <img src="../img/mostrarPass.svg" alt="Mostrar Contraseña" class="show-password" onclick="togglePasswordVisibility()">
+                            </div>
+                        </div>
                     </div>
+                    
+                    
                     <div class="campo">
                         <label></label>
                         <button submit="LoginUsuario" class="red-button-registro">Entrar</button>
