@@ -94,7 +94,7 @@ footer {
 
 }
 
-#button-container {
+#button-home-container{
     display: flex;
     justify-content: flex-end;
     margin-right: 20px; /* Ajusta el valor según sea necesario */
@@ -119,6 +119,7 @@ footer {
 	margin-right: 20px;
 	position: relative;
 	overflow: hidden;
+	font-family: 'Fredoka', sans-serif;
 	transition: all 0.25s ease; /* Agregado para aplicar la transición a todos los cambios */
   }
   
@@ -127,7 +128,6 @@ footer {
 	position: absolute;
 	left: -20%;
 	transition: 0.25s ease;
-	font-family: 'Fredoka', sans-serif;
   }
   
   .blue-button span {
@@ -137,6 +137,7 @@ footer {
   
   .blue-button:hover {
 	width: 170px; /* Aumenta el ancho en el estado de hover */
+	cursor: pointer;
   }
   
   .blue-button:hover span {
@@ -174,6 +175,8 @@ footer {
   
   .red-button:hover {
 	width: 170px; /* Aumenta el ancho en el estado de hover */
+	cursor: pointer;
+
   }
   
   .red-button:hover span {
@@ -186,10 +189,11 @@ footer {
 
   #container-info {
 	justify-content: left;
+	margin-top: 40px; /* Ajusta la distancia desde el elemento superior según sea necesario */
+
 }
 
 .green-button {
-    margin-top: 10px; /* Ajusta la distancia desde el elemento superior según sea necesario */
     width: 50px;
     height: 50px;
     background-color: #9DDF2C;
@@ -202,3 +206,152 @@ footer {
 	margin-top: 50px; /* Ajusta la distancia desde el elemento superior según sea necesario */
 	margin-left: 40px;
 }
+
+#button-back-container {
+	justify-content: left;
+	width: 60px;
+	margin-left:10px;
+	margin-top:10px;
+}
+  
+.back-button {
+    background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+
+/* BOTÓN CON IMAGEN PARA DIGIRSE A HOME */
+#button-logo-form{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+
+}
+  
+.logo-button{
+	background-color:transparent;
+	border:none;
+	cursor: pointer;
+}
+
+/*FORMILARIO PARA REGISTRARSE*/
+#form-container {
+	width: 45%;
+	height: auto;
+	background-color: #FF9500;
+	border-radius: 30px;
+	display: flex;
+	align-items: stretch; /* Ajusta la propiedad 'align-items' a 'stretch' */
+	justify-content: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-bottom: 20px; /* Agregamos un margen inferior para separar del contenedor de registro */
+
+}
+
+.header-form {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	background-color: #0081C6;
+	display: flex;
+	align-items: center; /* Centra el contenido verticalmente dentro de header-form */
+	justify-content: center; /* Centra el contenido horizontalmente dentro de header-form */
+	font-family: 'Fredoka', sans-serif;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+
+}
+
+.campos-form {
+    padding: 20px;
+	margin-top: 20px;
+}
+
+.campos-form .campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.campos-form .campo label {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    padding-right: 20px;
+    text-align: left;
+    font-family: 'Fredoka', sans-serif; /* Fuente 'Fredoka One' */
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.campos-form .campo input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px;
+    width: 50%;
+    border: none;
+    color: black; /* Color del texto */
+    font-family: 'Fredoka', sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    text-align: center; /* Alineación del texto */
+}
+
+
+
+.red-button-registro {
+    background-color: #DC4C22;
+    color: white;
+    border: none;
+	margin-left: 22%;
+	font-family: 'Fredoka', sans-serif;
+	width: 150px;
+	height: 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+
+}
+
+.campos-form .campo img {
+    margin-right: 10px; /* Espaciado entre la etiqueta y el icono */
+	width: 2%;
+}
+
+.registro-container {
+    display: flex;
+	width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32%;
+	position: absolute;
+	top: 5%;
+
+}
+
+.registro-container label {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #0081C6;
+	margin-right: 3.5%;
+	margin-left:37%;
+}
+
+.registro-container button {
+    /* Estilos del botón blue-button */
+    background-color: #0081C6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Fredoka', sans-serif;
+    transition: all 0.25s ease;
+}
+
