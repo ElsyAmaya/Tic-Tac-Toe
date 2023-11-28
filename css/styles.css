@@ -207,7 +207,25 @@ footer {
 	margin-left: 40px;
 }
 
+.salir-button {
+    width: 50px;
+    height: 50px;
+    background-color: #DC4C22;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
 #button-back-container {
+	justify-content: left;
+	width: 60px;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+#button-salir-container {
 	justify-content: left;
 	width: 60px;
 	margin-left:10px;
@@ -226,13 +244,26 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: right;
-
 }
   
 .logo-button{
 	background-color:transparent;
 	border:none;
 	cursor: pointer;
+}
+
+.blue-container-logo {
+    position: absolute;
+    top: 210px; /* Ajusta la posición desde la parte superior según tus necesidades */
+    right: 10px; /* Ajusta la posición desde la derecha según tus necesidades */
+    display: flex;
+    background-color: #0081c6be; /* Color azul */
+    padding: 20px;
+    border-radius: 30px;
+    width: 240px; /* O ajusta a un valor específico según tus necesidades */
+    height: 100px;
+	align-items: center; /* Centra los elementos verticalmente */
+    color: #ffffff;
 }
 
 /*FORMILARIO PARA REGISTRARSE*/
@@ -398,3 +429,67 @@ footer {
     cursor: pointer;
 }
 
+
+.blue-container {
+    background-color: #0081C6; /* Color azul */
+    padding: 20px;
+    border-radius: 30px;
+    width: 50%; /* Ajusta este valor para cambiar el ancho */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+	height: auto;
+	align-items: stretch; /* Ajusta la propiedad 'align-items' a 'stretch' */
+	justify-content: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-bottom: 20px;
+	flex-direction: column; /* Cambiado a dirección vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    color: #ffffff;
+
+	
+}
+
+.orange-button {
+    background-color: #FF9500; /* Color naranja */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1px; /* Espacio entre botones */
+    width: 200px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 16px;
+    font-weight: bold; /* Agregado para hacer el texto en negrita */
+}
+
+label {
+    font-size: 20px;
+	font-family: 'Fredoka', sans-serif;
+	font-weight: bold;
+}
+
+hr {
+    border: 1px solid white;
+    width: 100%;
+    margin: 5px auto;
+}
+
+
+.button-wrapper .content-wrapper {
+    display: flex;
+    align-items: center;
+	margin-top: 10px;
+}
+
+.button-wrapper img {
+    width: 70px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 70px; /* Ajusta la altura de la imagen según sea necesario */
+    margin-right: 10px; /* Espacio entre la imagen y el texto/botón */
+}
+
+
+  
