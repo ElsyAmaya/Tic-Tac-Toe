@@ -245,7 +245,19 @@ footer {
 	align-items: center;
 	justify-content: right;
 }
-  
+
+#button-logo-form-room{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#button-code-form{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
 .logo-button{
 	background-color:transparent;
 	border:none;
@@ -253,18 +265,60 @@ footer {
 }
 
 .blue-container-logo {
+    display: flex;
     position: absolute;
     top: 210px; /* Ajusta la posición desde la parte superior según tus necesidades */
-    right: 10px; /* Ajusta la posición desde la derecha según tus necesidades */
-    display: flex;
+    right: 15px; /* Ajusta la posición desde la derecha según tus necesidades */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
     background-color: #0081c6be; /* Color azul */
     padding: 20px;
     border-radius: 30px;
     width: 240px; /* O ajusta a un valor específico según tus necesidades */
-    height: 100px;
-	align-items: center; /* Centra los elementos verticalmente */
     color: #ffffff;
 }
+
+.grey-container-logo {
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    background-color: #EFEFEF;
+    padding: 20px;
+    border-radius: 30px;
+    width: 220px;
+    color: #122A36;
+    align-items: center;
+    display: flex; /* Agrega flexbox */
+    flex-direction: column; /* Establece la dirección de la columna para apilar los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos dentro del contenedor */
+    border: 2px solid #0081C6;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-right: 20px;
+}
+
+
+.grey-container-chat {
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    background-color: #EFEFEF;
+    padding: 20px;
+    border-radius: 30px;
+    width: 220px;
+    height: 300px;
+    color: #122A36;
+    align-items: center;
+    display: flex; /* Agrega flexbox */
+    flex-direction: column; /* Establece la dirección de la columna para apilar los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos dentro del contenedor */
+    border: 2px solid #0081C6;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-left: 20px;
+}
+
+
+
+
 
 /*FORMILARIO PARA REGISTRARSE*/
 #form-container {
@@ -277,6 +331,21 @@ footer {
 	justify-content: center;
 	position: absolute;
 	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-bottom: 20px; /* Agregamos un margen inferior para separar del contenedor de registro */
+
+}
+
+#form-container-Grey {
+	width: 45%;
+	height: auto;
+	border-radius: 30px;
+	display: flex;
+	align-items: stretch; /* Ajusta la propiedad 'align-items' a 'stretch' */
+	justify-content: center;
+	position: absolute;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin-bottom: 20px; /* Agregamos un margen inferior para separar del contenedor de registro */
@@ -324,7 +393,7 @@ footer {
     border-radius: 30px;
     width: 50%;
     border: none;
-    color: black; /* Color del texto */
+    color: #122A36; /* Color del texto */
     font-family: 'Fredoka', sans-serif; /* Fuente */
     font-size: 16px; /* Tamaño de fuente */
     text-align: center; /* Alineación del texto */
@@ -405,7 +474,7 @@ footer {
     padding: 10px;
     border-radius: 30px;
     border: none;
-    color: black;
+    color: #122A36;
     font-family: 'Fredoka', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -434,7 +503,7 @@ footer {
     background-color: #0081C6; /* Color azul */
     padding: 20px;
     border-radius: 30px;
-    width: 50%; /* Ajusta este valor para cambiar el ancho */
+    width: 80%; /* Ajusta este valor para cambiar el ancho */
     margin: auto; /* Centra el contenedor horizontalmente */
     display: flex;
 	height: auto;
@@ -452,6 +521,27 @@ footer {
 	
 }
 
+.grey-container {
+    background-color: #EFEFEF; /* Color azul */
+    padding: 20px;
+    border-radius: 30px;
+    width: 80%; /* Ajusta este valor para cambiar el ancho */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+	height: auto;
+	align-items: stretch; /* Ajusta la propiedad 'align-items' a 'stretch' */
+	justify-content: center;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-bottom: 20px;
+	flex-direction: column; /* Cambiado a dirección vertical */
+    color: #000000;
+    border: 2px solid #0081C6;
+
+}
+
 .orange-button {
     background-color: #FF9500; /* Color naranja */
     color: white;
@@ -460,11 +550,45 @@ footer {
     border-radius: 20px;
     cursor: pointer;
     margin-top: 1px; /* Espacio entre botones */
-    width: 200px;
+    width: 250px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 	font-size: 16px;
     font-weight: bold; /* Agregado para hacer el texto en negrita */
 }
+
+.enlace-button{
+        position: absolute;
+        display: flex;
+        top: 280px;
+        right: 55px;
+        background-color: #0081C6;
+        padding: 15px;
+        border-radius: 30px;
+        color: #ffffff;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        margin-right: 20px;
+        border: none;
+        font-weight: bold;
+    }
+
+    .play-button{
+        position: absolute;
+        width: 200px;
+        top: 450px;
+        right: 50px;
+        background-color:#FFD100;
+        padding: 15px;
+        border-radius: 30px;
+        color: #ffffff;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        margin-right: 20px;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+
 
 label {
     font-size: 20px;
@@ -474,15 +598,34 @@ label {
 
 hr {
     border: 1px solid white;
-    width: 100%;
+    width: 300px;
     margin: 5px auto;
 }
+
+
+.hr1 {
+    border: 1px solid white;
+    width: auto;
+    margin: 5px auto;
+}
+.hr2 {
+    border: 1px solid #122A36;
+    width: 450px;
+    margin: 5px auto;
+}
+
 
 
 .button-wrapper .content-wrapper {
     display: flex;
     align-items: center;
 	margin-top: 10px;
+    
+}
+
+.button-wrapper-p .content-wrapper-p {
+    display: flex;
+    
 }
 
 .button-wrapper img {
@@ -491,5 +634,14 @@ hr {
     margin-right: 10px; /* Espacio entre la imagen y el texto/botón */
 }
 
-
-  
+.person{
+    display: flex;
+    flex-direction: column; /* Cambiado a dirección vertical */
+	margin-top: 10px;
+    color: #EFEFEF;
+    background-color: #0081C6;
+    padding: 3px;
+    margin-bottom: 5px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 100%;
+}
