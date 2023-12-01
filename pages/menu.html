@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Registro - Tic Tac Toe</title>
-    <link rel="shortcut icon" href="img/LogoTicTacToe.svg" type="image/x-icon">
+    <title>Tic Tac Toe</title>
     <meta name="author" content="Grupo#1">
     <meta name="keywords" content="html,Tic Tac Toe">
     <link rel="stylesheet" href="../css/styles.css">
@@ -20,12 +19,12 @@
                 <!-- Primer botón -->
                 <div class="button-wrapper">
                     <div class="content-wrapper">
-                        <img src="../img/organizar.svg" alt="Descripción de la imagen 1">
+                        <img src="../img/organizar.svg" alt="Organizar">
                         <div class="text-button-wrapper">
                             <label for="organizar-privada">Organizar Privada</label>
                             <hr>
                             <center>
-                                <button class="orange-button" id="organizar-privada">Crear Partida</button>
+                                <button class="orange-button" id="organizar-privada"><span>Crear Partida</span></button>
                             </center>
                         </div>
                     </div>
@@ -33,13 +32,13 @@
                 <!-- Segundo botón -->
                 <div class="button-wrapper">
                     <div class="content-wrapper">
-    
-                        <img src="../img/publica.svg" alt="Descripción de la imagen 1">
+
+                        <img src="../img/publica.svg" alt="publica">
                         <div class="text-button-wrapper">
                             <label for="crear-partida">Pública</label>
                             <hr>
                             <center>
-                                <button class="orange-button" id="crear-partida">Buscar Partida</button>
+                                <button class="orange-button" id="buscar-partida"><span>Buscar Partida</span></button>
                             </center>
                         </div>
                     </div>
@@ -52,7 +51,8 @@
                             <label for="buscar-partida">Privada</label>
                             <hr>
                             <center>
-                                <button class="orange-button" id="buscar-partida">Código</button>
+                                <button class="orange-button" id="codigo"
+                                    onclick="openCodigoModal()"><span>Código</span></button>
                             </center>
                         </div>
                     </div>
@@ -111,5 +111,51 @@
         </div>
     </footer>
 </body>
+<div id="codigoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <label for="codigoInput" style="font-size: 25px;">Código</label>
+        <label for="codigoInput" style="font-size: 14px;">Ingrese el codigo de sala: </label>
+        <input type="text" id="codigoInput" name="codigoInput">
+        <div class="boton-con">
+            <button id="ingresarBtn">Ingresar</button>
+            <button id="cancelarBtn">Cancelar</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    // Get the modal element
+    var codigoModal = document.getElementById("codigoModal");
+
+    // Get the button that opens the modal
+    var codigoButton = document.getElementById("codigo");
+
+    // Get the <span> element that closes the modal
+    var closeSpan = document.getElementsByClassName("close")[0];
+
+    // Function to open the modal
+    function openCodigoModal() {
+        codigoModal.style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeCodigoModal() {
+        codigoModal.style.display = "none";
+    }
+
+    // Close the modal when the user clicks on the close button (x)
+    closeSpan.onclick = function () {
+        closeCodigoModal();
+    }
+
+    // Close the modal when the user clicks outside of it
+    window.onclick = function (event) {
+        if (event.target == codigoModal) {
+            closeCodigoModal();
+        }
+    }
+
+</script>
 
 </html>
